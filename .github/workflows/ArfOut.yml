@@ -36,11 +36,11 @@ jobs:
     needs: Build
     runs-on: ubuntu-latest
     steps: 
-    #  - name: Dowmload artifacts
-    #    uses: actions/download-artifact@v3
-    #    with:
-    #      name: artifact-files
-    #  - name: Output contents
-    #    run: ls   
+      - name: Dowmload artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: artifact-files
+      - name: Output contents
+        run: ls   
       - name: Deployment
         run: echo "Deploying ...." 
