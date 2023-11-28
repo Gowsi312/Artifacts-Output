@@ -31,7 +31,6 @@ jobs:
           name: artifact-files
             path:
               dist
-
         #  path: |
         #    dist
         #   package.json               
